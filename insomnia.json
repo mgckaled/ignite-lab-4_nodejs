@@ -1,0 +1,99 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-12-13T12:23:56.347Z",
+  "__export_source": "insomnia.desktop.app:v2022.6.0",
+  "resources": [
+    {
+      "_id": "req_939c63b9865c4469a02139a2518c9877",
+      "parentId": "wrk_375a1819fcda4d4aad1bf7afde547f6d",
+      "modified": 1670931479069,
+      "created": 1670931451988,
+      "url": "http://localhost:3000/notifications",
+      "name": "List notifications",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1670931451988,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_375a1819fcda4d4aad1bf7afde547f6d",
+      "parentId": null,
+      "modified": 1670931415747,
+      "created": 1670931415747,
+      "name": "ignitelab4_notifications-message",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_d329c1a4ce5d4dca87e3d1963b7d4e19",
+      "parentId": "wrk_375a1819fcda4d4aad1bf7afde547f6d",
+      "modified": 1670934176648,
+      "created": 1670931423545,
+      "url": "http://localhost:3000/notifications",
+      "name": "Create notification",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\t\n\t\"recipientId\": \"{% uuid 'v4' %}\",\n\t\"content\": \"ashduashduhasd\",\n\t\"category\": \"ajsdhiuaaasasd\"\n}"
+      },
+      "parameters": [],
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "authentication": {},
+      "metaSortKey": -1670931423545,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_66ccd4ffe90e98c1cdfb8921b151109f10b7b095",
+      "parentId": "wrk_375a1819fcda4d4aad1bf7afde547f6d",
+      "modified": 1670931415754,
+      "created": 1670931415754,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1670931415754,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_66ccd4ffe90e98c1cdfb8921b151109f10b7b095",
+      "parentId": "wrk_375a1819fcda4d4aad1bf7afde547f6d",
+      "modified": 1670931415756,
+      "created": 1670931415756,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_1d6254c6962847b98967dc285b64d433",
+      "parentId": "wrk_375a1819fcda4d4aad1bf7afde547f6d",
+      "modified": 1670931415748,
+      "created": 1670931415748,
+      "fileName": "ignitelab4_notifications-message",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
